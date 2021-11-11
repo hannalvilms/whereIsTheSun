@@ -1,0 +1,335 @@
+$beige: rgba(217,	195,	185	, 1);
+$quicksand: 'Quicksand', sans-serif;
+$racing: 'Racing Sans One', cursive;
+$montserrat: 'Montserrat', sans-serif;
+$minheight: 100vh;
+$uppercase: uppercase;
+
+
+@mixin opacity-and-border {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin background {
+  background-color: $beige;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-position: center;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes animation-slide-in-left {
+  0% {
+      transform: translate(-100%,0);
+  }
+
+  100% {
+      transform: translate(0,0);
+  }
+}
+
+
+html, body, #root {
+  height: 100%;
+  font-family: $quicksand;
+}
+
+.forecast-body {
+  @include background;
+  min-height: $minheight;
+}
+
+.header {
+  background-color: $beige;
+  min-height: $minheight;
+}
+
+.logo {
+  margin-top: 30px !important;
+}
+
+.redirect, input, .data:hover, .cache, .weather-location svg {
+  cursor: pointer;
+}
+
+textPath {
+  font-family: $quicksand;
+  font-size: 45px;
+  font-weight: 300;
+  text-transform: $uppercase;
+}
+
+#curve {
+  fill: transparent;
+}
+
+.sun {
+  font-family: $racing;
+  font-size: 75px;
+  margin: -23% auto 10%;
+  text-transform: $uppercase;
+  text-align: center;
+}
+
+.main-cache {
+  animation: animation-slide-in-left 3s;
+}
+
+.search-bar {
+  @include flex-column;
+  @include background;
+  text-align: center;
+  background-image: linear-gradient(
+    270deg,
+rgba(255,255,255,0) 15%, 
+    $beige 100%), 
+    url('./img/leaves.jpg')
+  ;
+}
+
+.geo button {
+  background-image: linear-gradient(to right, rgba(199,	160	,146		,	1)	 10%, rgba(190,	141,	131			,	1) 41%, rgba(199,	160	,146	, 1) 100%);
+  background-size: 200% auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  color: azure;
+  font-size: 10px;
+  margin: 5px auto;
+  transition: 1.0s;
+  text-transform: $uppercase;
+  padding: 3px 10px;
+  width: 30%;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  height: 50px;
+  padding-left: 35px;
+  margin-bottom: 2% !important;
+  outline: none;
+  width: 60%;
+}
+
+h6 {
+  margin-left: -52px;
+  position: relative;
+}
+
+.input-container {
+  @include flex-row;
+  justify-content: center;
+  align-items: baseline;
+
+  svg {
+    z-index: 100 !important;
+    margin-right: -30px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.recently-viewed {
+  font-family: $racing;
+  font-size: 25px;
+  margin-top: 5% !important;
+  text-transform: $uppercase;
+}
+
+.cache {
+  @include opacity-and-border;
+  margin: 20px 20px 20px 0;
+  padding-top: 15px;
+}
+
+.search-results {
+  @include opacity-and-border;
+  animation: fadein 2s;
+  width: 60%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.selected {
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: -10px !important;
+  margin-bottom: 15px;
+}
+
+.data p {
+  margin-bottom: 10px;
+}
+
+
+.weather-content {
+  @include flex-column;
+  background: rgba(255,255,255,0.5);
+  border-radius: 20px;
+  padding: 65px 10px 100px;
+  margin: 0 auto 150px !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-location {
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto 0;
+
+  h1 {
+    font-family: $racing;
+    text-transform: $uppercase;
+    font-size: 35px;
+  }
+
+  svg {
+    width: 30px;
+    height: 25px;
+    margin-top: -8px;
+    margin-right: 30px;
+  }
+}
+
+.today-box {
+  @include opacity-and-border;
+  animation: fadein 3s;
+  padding: 20px 40px;
+  margin: 0 auto 70px !important;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+b {
+  font-family: $montserrat;
+  font-weight: 500 !important;
+  padding-left: 25px;
+}
+
+.seven-day {
+  @include flex-row;
+  justify-content: center;
+
+  h2 {
+    font-size: 15px;
+    text-transform: $uppercase;
+    font-family: $montserrat;
+    font-weight: 600;
+  }
+}
+
+.weather-card {
+  @include opacity-and-border;
+  animation: fadein 3s;
+  width: 12%;
+  margin: 0 10px;
+  text-align: center;
+  padding: 20px 0 15px;
+  svg {
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.today-icon {
+  @include flex-row;
+  justify-content: flex-start;
+  align-items: center;
+  svg {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .seven-day {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seven-day h2 {
+    width: 20%;
+    text-align: left;
+    font-size: 12px;
+  }
+  .weather-card {
+    @include flex-row;
+    margin: 10px auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .weather-location {
+    margin-bottom: 20px;
+  }
+  .today-box {
+    padding: 50px 10px;
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 880px) {
+  .today-icon {
+    flex-direction: column-reverse !important;
+    align-items: baseline !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header{
+    min-height: inherit !important;
+  }
+  .search-bar {
+    min-height: 80vh;
+    background-image: linear-gradient(
+      0deg,
+  rgba(255,255,255,0) 5%, 
+      $beige 100%), 
+      url('./img/leaves.jpg')
+    ;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .today-icon h1, .today-icon svg {
+    margin: 0 auto !important;
+  }
+  .updated-time h2, .updated-time p {
+    text-align: center;
+  }
+  .today-icon {
+    margin-bottom: 20px;
+  }
+}

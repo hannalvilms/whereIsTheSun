@@ -7,8 +7,8 @@ import Weather from "./Components/Weather";
 
 ReactDOM.render(
     <BrowserRouter>
-        <Route path = "/home" component={App}/>
-        <Route path="/weather" component={Weather}/>
+        <Route exact path = "/whereIsTheSun" component={App}/>
+        <Route exact path="/whereIsTheSun/weather" component={Weather}/>
     </BrowserRouter>,
     document.getElementById('root')
 );
