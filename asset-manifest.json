@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/whereIsTheSun/static/css/main.e3502824.chunk.css",
+    "main.js": "/whereIsTheSun/static/js/main.4f59ebe9.chunk.js",
+    "main.js.map": "/whereIsTheSun/static/js/main.4f59ebe9.chunk.js.map",
+    "runtime-main.js": "/whereIsTheSun/static/js/runtime-main.aeb4eddd.js",
+    "runtime-main.js.map": "/whereIsTheSun/static/js/runtime-main.aeb4eddd.js.map",
+    "static/js/2.a82fcae8.chunk.js": "/whereIsTheSun/static/js/2.a82fcae8.chunk.js",
+    "static/js/2.a82fcae8.chunk.js.map": "/whereIsTheSun/static/js/2.a82fcae8.chunk.js.map",
+    "static/js/3.96607391.chunk.js": "/whereIsTheSun/static/js/3.96607391.chunk.js",
+    "static/js/3.96607391.chunk.js.map": "/whereIsTheSun/static/js/3.96607391.chunk.js.map",
+    "index.html": "/whereIsTheSun/index.html",
+    "precache-manifest.5f2df10b2102a60feeb1759b8e692a32.js": "/whereIsTheSun/precache-manifest.5f2df10b2102a60feeb1759b8e692a32.js",
+    "service-worker.js": "/whereIsTheSun/service-worker.js",
+    "static/css/main.e3502824.chunk.css.map": "/whereIsTheSun/static/css/main.e3502824.chunk.css.map",
+    "static/js/2.a82fcae8.chunk.js.LICENSE.txt": "/whereIsTheSun/static/js/2.a82fcae8.chunk.js.LICENSE.txt",
+    "static/media/cloudy3.jpg": "/whereIsTheSun/static/media/cloudy3.2993703e.jpg",
+    "static/media/fog5.jpg": "/whereIsTheSun/static/media/fog5.a9b1d27c.jpg",
+    "static/media/leaves.jpg": "/whereIsTheSun/static/media/leaves.6b10f880.jpg",
+    "static/media/rain.jpg": "/whereIsTheSun/static/media/rain.cac4037d.jpg",
+    "static/media/sand.jpg": "/whereIsTheSun/static/media/sand.09d7ae65.jpg",
+    "static/media/snow2.jpg": "/whereIsTheSun/static/media/snow2.e5a62d6c.jpg",
+    "static/media/thunder.jpg": "/whereIsTheSun/static/media/thunder.d3f19533.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aeb4eddd.js",
+    "static/js/2.a82fcae8.chunk.js",
+    "static/css/main.e3502824.chunk.css",
+    "static/js/main.4f59ebe9.chunk.js"
+  ]
+}
