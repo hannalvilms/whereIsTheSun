@@ -15,10 +15,16 @@ export function getHistory() {
 export let history = getHistory();
 //add to cache
 export function addToHistory(searchDown) {
+    if(!localStorage.getItem("cache")) {
+       localStorage.setItem("cache", searchDown);
+       history.unshift(searchDown);
+       localStorage["cache"] = (JSON.stringify(history.slice(0, 5)))
+    }
     if (!localStorage["cache"].includes(searchDown) ) {
         history.unshift(searchDown);
-    localStorage["cache"] = (JSON.stringify(history.slice(0, 5)))
+        localStorage["cache"] = (JSON.stringify(history.slice(0, 5)))
     }
+ 
 }
 
 //change the location icon

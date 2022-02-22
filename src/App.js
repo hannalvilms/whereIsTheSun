@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import cities from 'cities.json';
 import Cache from "./Components/Cache";
 import {useHistory} from "react-router-dom";
@@ -100,6 +99,7 @@ function App() {
                 fetch(`${api.base}onecall?lat=${result.coord.lat}&lon=${result.coord.lon}&units=metric&exclude=hourly,minutely&APPID=${api.key}`)
                     .then(response => {
                         if (response.ok) {
+                            console.log(response)
                             return response.json()
                         }
                     })

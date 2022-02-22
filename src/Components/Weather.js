@@ -1,6 +1,5 @@
 import React from 'react';
 import '../style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {useHistory} from "react-router-dom";
 import {Icon} from "@iconify/react";
 import { 
