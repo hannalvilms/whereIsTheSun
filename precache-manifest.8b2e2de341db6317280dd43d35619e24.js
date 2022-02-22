@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96c4ea82e0f50b48f2b6836d2b1dbee4",
+    "revision": "0ee0f238ca88e8ad8e9948ca6374749a",
     "url": "/whereIsTheSun/index.html"
   },
   {
-    "revision": "fdff20a7a30aba3f62a6",
+    "revision": "2807c6e4ce8b7dfff2e3",
     "url": "/whereIsTheSun/static/css/main.e3502824.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whereIsTheSun/static/js/3.96607391.chunk.js"
   },
   {
-    "revision": "fdff20a7a30aba3f62a6",
-    "url": "/whereIsTheSun/static/js/main.4f59ebe9.chunk.js"
+    "revision": "2807c6e4ce8b7dfff2e3",
+    "url": "/whereIsTheSun/static/js/main.03006813.chunk.js"
   },
   {
     "revision": "9aa301cc8eea7a31ae55",

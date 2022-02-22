@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/whereIsTheSun/static/css/main.e3502824.chunk.css",
-    "main.js": "/whereIsTheSun/static/js/main.4f59ebe9.chunk.js",
-    "main.js.map": "/whereIsTheSun/static/js/main.4f59ebe9.chunk.js.map",
+    "main.js": "/whereIsTheSun/static/js/main.03006813.chunk.js",
+    "main.js.map": "/whereIsTheSun/static/js/main.03006813.chunk.js.map",
     "runtime-main.js": "/whereIsTheSun/static/js/runtime-main.aeb4eddd.js",
     "runtime-main.js.map": "/whereIsTheSun/static/js/runtime-main.aeb4eddd.js.map",
     "static/js/2.a82fcae8.chunk.js": "/whereIsTheSun/static/js/2.a82fcae8.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.96607391.chunk.js": "/whereIsTheSun/static/js/3.96607391.chunk.js",
     "static/js/3.96607391.chunk.js.map": "/whereIsTheSun/static/js/3.96607391.chunk.js.map",
     "index.html": "/whereIsTheSun/index.html",
-    "precache-manifest.5f2df10b2102a60feeb1759b8e692a32.js": "/whereIsTheSun/precache-manifest.5f2df10b2102a60feeb1759b8e692a32.js",
+    "precache-manifest.8b2e2de341db6317280dd43d35619e24.js": "/whereIsTheSun/precache-manifest.8b2e2de341db6317280dd43d35619e24.js",
     "service-worker.js": "/whereIsTheSun/service-worker.js",
     "static/css/main.e3502824.chunk.css.map": "/whereIsTheSun/static/css/main.e3502824.chunk.css.map",
     "static/js/2.a82fcae8.chunk.js.LICENSE.txt": "/whereIsTheSun/static/js/2.a82fcae8.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.aeb4eddd.js",
     "static/js/2.a82fcae8.chunk.js",
     "static/css/main.e3502824.chunk.css",
-    "static/js/main.4f59ebe9.chunk.js"
+    "static/js/main.03006813.chunk.js"
   ]
 }
